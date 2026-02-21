@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tech Learning Hub</title>
+</head>
+<body>
+
+    <h1>Tech Learning Hub</h1>
+
+    <p>
+        Welcome to Tech Learning Hub! We provide hands-on training in modern 
+        technology skills including programming, web development, and data science.
+    </p>
+
+    <img src="/Users/jahnaviroyal/Desktop/Screenshot 2026-02-15 at 11.04.13 AM.png"
+         alt="Students learning technology"
+         width="400">
+
+    <p>
+        <a href="https://www.tech-learning-hub.com/" target="_blank">Enroll Now</a>
+    </p>
+        <h2>Our Courses</h2>
+    <ul>
+        <li>Web Development</li>
+        <li>Python Programming</li>
+        <li>Data Science</li>
+    </ul>
+
+    <p><b>Admissions are open for 2025.</b></p>
+    <p><i>Limited seats available.</i></p>
+
+    <div style="border:1px solid black; padding:10px; width:300px;">
+        <h3>Announcements</h3>
+        <p>New AI course launching soon.</p>
+        <p>Weekend workshops available.</p>
+    </div>
+
+    <footer>
+        <p>© 2025 Tech Learning Hub</p>
+    </footer>
+
+</body>
+</html>
+
+
