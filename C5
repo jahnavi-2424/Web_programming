@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Line Break and Horizontal Line Example</title>
+</head>
+<body>
+
+    <p>
+        This is the first line.<br>
+        This is the second line after one break.<br>
+        This is the third line after two breaks.
+    </p>
+
+    <hr>
+
+    <p>
+        This is another paragraph displayed after the horizontal line.
+    </p>
+
+</body>
+</html>
+
+
+
+
+
