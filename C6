@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Div with Formatting Example</title>
+</head>
+<body>
+
+    <div>
+        <h2>My Favorite Cartoon</h2>
+        <p>
+            Tom and Jerry is a <b>funny</b> and <i>entertaining</i> cartoon loved by many children.
+        </p>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
