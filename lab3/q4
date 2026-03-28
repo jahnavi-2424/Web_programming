@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rectangle Area</title>
+</head>
+<body>
+
+<h2>Rectangle Area Calculator</h2>
+
+<p id="output"></p>
+
+<script>
+var lengthValue = 10;
+var widthValue = 5;
+
+var areaResult = lengthValue * widthValue;
+
+document.getElementById("output").innerHTML = 
+"Integer Area: " + areaResult + "<br>";
+
+lengthValue = 10.5;
+widthValue = 5.2;
+
+areaResult = lengthValue * widthValue;
+
+document.getElementById("output").innerHTML += 
+"Float Area: " + areaResult;
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
