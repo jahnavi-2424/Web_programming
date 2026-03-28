@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello Page</title>
+</head>
+<body>
+
+<button id="btn" onclick="showMessage()">Click Me</button>
+
+<p id="text"></p>
+
+<script>
+var message = "Hello, world!";
+
+function showMessage() {
+    var element = document.getElementById("text");
+    element.outerHTML = "<p id='text'>" + message + "</p>";
+}
+</script>
+
+</body>
+</html>
