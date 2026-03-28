@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table</title>
+</head>
+<body>
+
+<h2>Multiplication Table (Do-While)</h2>
+
+Enter Number: <input type="text" id="numberInput">
+<button onclick="printTable()">Generate Table</button>
+
+<p id="output"></p>
+
+<script>
+function printTable() {
+    var numberValue = parseInt(document.getElementById("numberInput").value);
+    var i = 1;
+    var result = "";
+
+    do {
+        result += numberValue + " x " + i + " = " + (numberValue * i) + "<br>";
+        i++;
+    } while (i <= 10);
+
+    document.getElementById("output").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
