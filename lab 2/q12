@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Portal</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: skyblue;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  background-color: darkblue;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.section {
+  background-color: darkblue;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  color: darkblue;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: lightgray;
+}
+</style>
+
+<script>
+function showMessage() {
+  alert("Form Submitted Successfully");
+}
+</script>
+</head>
+
+<body>
+
+<h1>Student Registration Portal</h1>
+
+<nav>
+  <a href="#personal">Personal Information</a>
+  <a href="#academic">Academic Details</a>
+  <a href="#address">Address Information</a>
+  <a href="#account">Account Credentials</a>
+</nav>
+
+<form onsubmit="showMessage()">
+
+<div id="personal" class="section">
+  <h2>Personal Information</h2>
+  <input type="text" placeholder="Full Name">
+  <input type="date">
+  <select>
+    <option>Gender</option>
+    <option>Male</option>
+    <option>Female</option>
+  </select>
+  <input type="email" placeholder="Email Address">
+  <input type="text" placeholder="Mobile Number">
+</div>
+
+<div id="academic" class="section">
+  <h2>Academic Details</h2>
+  <input type="text" placeholder="Register Number">
+  <input type="text" placeholder="Degree Program">
+  <input type="text" placeholder="Department">
+  <input type="text" placeholder="Year of Study">
+</div>
+
+<div id="address" class="section">
+  <h2>Address Information</h2>
+  <input type="text" placeholder="Door Number">
+  <input type="text" placeholder="Street Name">
+  <input type="text" placeholder="City">
+  <input type="text" placeholder="State">
+  <input type="text" placeholder="Pincode">
+</div>
+
+<div id="account" class="section">
+  <h2>Account Credentials</h2>
+  <input type="text" placeholder="Username">
+  <input type="password" placeholder="Password">
+  <input type="password" placeholder="Confirm Password">
+  <button type="submit">Submit</button>
+</div>
+
+</form>
+
+</body>
+</html>
+
+
+
+
+
