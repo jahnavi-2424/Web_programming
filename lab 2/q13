@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>QuickEats Food Delivery</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #ff5722;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navigation */
+nav {
+  background-color: #333;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Welcome Section */
+.welcome {
+  text-align: center;
+  padding: 40px;
+  background-color: #f4f4f4;
+}
+
+.welcome button {
+  padding: 10px 20px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Categories */
+.categories {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.category {
+  text-align: center;
+  width: 20%;
+}
+
+/* Featured Dishes */
+.menu {
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+.dish {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+}
+
+/* Contact */
+.contact {
+  padding: 20px;
+  background-color: #eee;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>QuickEats Food Delivery</h1>
+  <p>Fast, Fresh & Delivered to Your Doorstep</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Menu</a>
+  <a href="#">Order Online</a>
+  <a href="#">Contact Us</a>
+</nav>
+
+<section class="welcome">
+  <h2>Delicious Food Delivered to Your Doorstep</h2>
+  <p>Enjoy a wide variety of meals from your favorite restaurants delivered quickly and safely.</p>
+  <button>Order Now</button>
+</section>
+
+<section class="categories">
+  <div class="category">
+    <h3>Pizza</h3>
+    <p>Hot and cheesy pizzas</p>
+  </div>
+  <div class="category">
+    <h3>Burgers</h3>
+    <p>Juicy and tasty burgers</p>
+  </div>
+  <div class="category">
+    <h3>Biryani</h3>
+    <p>Flavorful rice dishes</p>
+  </div>
+  <div class="category">
+    <h3>Desserts</h3>
+    <p>Sweet treats to enjoy</p>
+  </div>
+</section>
+
+<section class="menu">
+  <h2>Popular Dishes</h2>
+
+  <div class="dish">
+    <h3>Margherita Pizza</h3>
+    <p>Classic cheese pizza with fresh tomatoes</p>
+    <p>₹299</p>
+    <button>Order Now</button>
+  </div>
+
+  <div class="dish">
+    <h3>Chicken Burger</h3>
+    <p>Crispy chicken patty with fresh veggies</p>
+    <p>₹199</p>
+    <button>Order Now</button>
+  </div>
+
+  <div class="dish">
+    <h3>Hyderabadi Biryani</h3>
+    <p>Spicy and aromatic rice with chicken</p>
+    <p>₹249</p>
+    <button>Order Now</button>
+  </div>
+
+</section>
+
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p>Phone: +91 9876543210</p>
+  <p>Email: support@quickeats.com</p>
+  <p>Location: Available across major cities</p>
+</section>
+
+<footer>
+  <p>© 2026 QuickEats Food Delivery | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
