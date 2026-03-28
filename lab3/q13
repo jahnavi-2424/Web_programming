@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product Order Form</title>
+</head>
+<body>
+
+<h2>Product Order Form</h2>
+
+<form id="orderForm">
+
+<fieldset>
+    <legend>Electronics</legend>
+    <input type="checkbox" name="product" value="40000"> Phone (₹40000)<br>
+    <input type="checkbox" name="product" value="70000"> Laptop (₹70000)<br>
+</fieldset>
+
+<fieldset>
+    <legend>Accessories</legend>
+    <input type="checkbox" name="product" value="2000"> Headphones (₹2000)<br>
+    <input type="checkbox" name="product" value="800"> Mouse (₹800)<br>
+</fieldset>
+
+<fieldset>
+    <legend>Books</legend>
+    <input type="checkbox" name="product" value="500"> Programming Book (₹500)<br>
+    <input type="checkbox" name="product" value="300"> Novel (₹300)<br>
+</fieldset>
+
+<br>
+<button type="button" onclick="calculateTotal()">Calculate Total</button>
+
+</form>
+
+<p id="result"></p>
+
+<script>
+function calculateTotal() {
+    var selectedProducts = document.getElementsByName("product");
+    var total = 0;
+
+    for (var item of selectedProducts) {
+        if (item.checked) {
+            total += parseFloat(item.value);
+        }
+    }
+
+    document.getElementById("result").innerHTML = "Total Price: ₹" + total;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
