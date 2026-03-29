@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Font Customization Tool</title>
+</head>
+<body>
+<h3>NAME: JAHNAVI</h3>
+<h3>REG NO: 24BCI0299</h3>
+
+<h2>Dynamic Font Customization</h2>
+
+<p id="textSample">Customize this text using the controls below.</p>
+
+<fieldset>
+    <legend>Font Controls</legend>
+
+    Font Size: 
+    <input type="range" id="fontSize" min="10" max="60" value="20" oninput="changeStyle()"><br><br>
+
+    Text Color: 
+    <input type="color" id="textColor" onchange="changeStyle()"><br><br>
+
+    Background Color: 
+    <input type="color" id="bgColor" onchange="changeStyle()"><br><br>
+
+</fieldset>
+
+<script>
+function changeStyle() {
+    var textElement = document.getElementById("textSample");
+
+    var sizeValue = document.getElementById("fontSize").value;
+    var textColorValue = document.getElementById("textColor").value;
+    var bgColorValue = document.getElementById("bgColor").value;
+
+    textElement.style.fontSize = sizeValue + "px";
+    textElement.style.color = textColorValue;
+    textElement.style.backgroundColor = bgColorValue;
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
