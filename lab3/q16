@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: serif;
+}
+.gallery {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  margin-left: 50px;
+}
+.gallery img {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  border: 5px solid rgb(220, 220, 220);
+  cursor: pointer;
+}
+.img1 { top: 50px; left: 20px; z-index: 1; }
+.img2 { top: 100px; left: 120px; z-index: 2; }
+.img3 { top: 150px; left: 220px; z-index: 3; }
+</style>
+</head>
+<body>
+
+<h1>Overlapping Image Gallery</h1>
+
+<div class="gallery">
+  <img class="img1" src="/Users/jahnaviroyal/Desktop/Screenshot 2026-03-29 at 11.38.02 AM.png">
+  <img class="img2" src="/Users/jahnaviroyal/Desktop/Screenshot 2026-03-29 at 11.39.07 AM.png">
+  <img class="img3" src="/Users/jahnaviroyal/Desktop/Screenshot 2026-03-29 at 11.38.46 AM.png">
+</div>
+
+<script>
+let topIndex = 3;
+document.querySelectorAll('.gallery img').forEach(img => {
+  img.onclick = () => img.style.zIndex = ++topIndex;
+});
+</script>
+
+</body>
+</html>
+
+
+
+
+
