@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Styling App</title>
+    <style>
+        .boldStyle { font-weight: bold; }
+        .italicStyle { font-style: italic; }
+        .smallCapsStyle { font-variant: small-caps; }
+    </style>
+</head>
+<body>
+<h3>NAME: JAHNAVI</h3>
+<h3>REG NO: 24BCI0299</h3>
+
+<h2>Text Styling Application</h2>
+
+<p id="message">This is a sample text message.</p>
+
+<fieldset>
+    <legend>Apply Styles</legend>
+
+    <button onclick="applyStyle('boldStyle')">Bold</button>
+    <button onclick="applyStyle('italicStyle')">Italic</button>
+    <button onclick="applyStyle('smallCapsStyle')">Small-Caps</button>
+    <button onclick="applyMultiple()">Apply All</button>
+    <button onclick="clearStyle()">Reset</button>
+</fieldset>
+
+<script>
+function applyStyle(styleName) {
+    document.getElementById("message").className = styleName;
+}
+
+function applyMultiple() {
+    document.getElementById("message").className = 
+        "boldStyle italicStyle smallCapsStyle";
+}
+
+function clearStyle() {
+    document.getElementById("message").className = "";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
