@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <h3>NAME: JAHNAVI</h3>
+<h3>REG NO:24BCI0299</h3>
+  <title>Country Explorer</title>
+
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <style>
+    .container {
+      text-align: center;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .card {
+      width: 200px;
+      padding: 10px;
+      background: #f2f2f2;
+      border-radius: 10px;
+    }
+
+    img {
+      width: 100px;
+      height: 60px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+
+    function CountryApp() {
+      const [name, setName] = React.useState("");
+      const [countries, setCountries] = React.useState([]);
+
+      const searchCountry = async () => {
+        const res = await fetch(
+          `https://restcountries.com/v3.1/name/${name}`
+        );
+        const data = await res.json();
+        setCountries(data);
+      };
+
+      return (
+        <div className="container">
+          <h2>Country Explorer</h2>
+
+          <input
+            type="text"
+            placeholder="Enter country"
+            onChange={(e) => setName(e.target.value)}
+          />
+
+          <button onClick={searchCountry}>Search</button>
+
+          <div className="grid">
+            {countries.map((c, index) => (
+              <div key={index} className="card">
+                <img src={c.flags.png} />
+                <h4>{c.name.common}</h4>
+                <p>Capital: {c.capital}</p>
+                <p>Population: {c.population}</p>
+                <p>Region: {c.region}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<CountryApp />);
+
+  </script>
+</body>
+</html>
+
+
+
+
+
